@@ -1,0 +1,140 @@
+/* ══════════════════════════════════════
+   RESPONSIVE (Mobile < 765px)
+══════════════════════════════════════ */
+
+@media (max-width: 764px) {
+  /* Ajustes Generales */
+  .container {
+    padding: 0 20px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  /* Header y Navegación */
+  .header__inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .nav__list {
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav__cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 140px 0 60px;
+    text-align: center;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 40px;
+  }
+
+  .hero__desc {
+    margin: 0 auto 36px;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .hero__stats {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero__visual {
+    height: 300px; /* Reducimos altura para móvil */
+  }
+
+  .hero__card--main {
+    width: 200px;
+  }
+
+  .hero__animal {
+    font-size: 3.5rem;
+  }
+
+  /* Secciones de Rejilla (Services, Team, Testimonials) */
+  .services__grid,
+  .team__grid,
+  .testimonials__grid {
+    grid-template-columns: 1fr; /* De 3 columnas a 1 */
+    gap: 20px;
+  }
+
+  /* About Section */
+  .about__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about__img-wrapper {
+    order: -1; /* La imagen aparece arriba del texto */
+  }
+
+  /* FAQ */
+  .faq__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact Section */
+  .contact__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact__form-wrapper {
+    padding: 30px 20px;
+  }
+
+  /* Footer */
+  .footer__inner {
+    grid-template-columns: 1fr; /* Todo en una columna */
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer__brand p {
+    margin: 16px auto;
+  }
+
+  .footer__col h4::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--green-500);
+    margin: 8px auto;
+  }
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE (Ordenador > 1600px)
+══════════════════════════════════════ */
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px; /* Aumentamos el ancho para que no se vea tan "comprimido" */
+  }
+  
+  .hero__title {
+    font-size: 4.5rem; /* Permitimos que el título crezca un poco más */
+  }
+}
